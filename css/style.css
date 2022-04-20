@@ -209,6 +209,11 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media (max-width: 425px) {
+  .header {
+    height: 800px;
+  }
+}
 .header .header_roof {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +222,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 95px;
+}
+@media (max-width: 425px) {
+  .header .header_roof {
+    padding-top: 40px;
+  }
 }
 .header .header_roof .logo {
   width: 20%;
@@ -364,9 +374,10 @@ body {
   line-height: 100px;
   font-weight: 700;
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .header h1 {
-    font-size: 65px;
+    font-size: 60px;
+    margin-top: 100px;
   }
 }
 .header p {
@@ -389,7 +400,7 @@ body {
   -webkit-animation: jump 1.2s ease-in infinite;
           animation: jump 1.2s ease-in infinite;
 }
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   .header .header_bottom_btn {
     -webkit-animation-name: jump_mobile;
             animation-name: jump_mobile;

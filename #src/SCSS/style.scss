@@ -227,10 +227,16 @@ body {
     background-image: url('../img/header_bg.png');
     background-position: center;
     background-size: cover;
+    @media (max-width: 425px) {
+        height: 800px;
+    }
     .header_roof {
         display: flex;
         justify-content: space-between;
         padding-top: 95px;
+        @media (max-width: 425px) {
+            padding-top: 40px;
+        }
         .logo {
             width: 20%;
             cursor: pointer;
@@ -346,8 +352,9 @@ body {
         font-size: 70px;
         line-height: 100px;
         font-weight: 700;
-        @media (max-width: 320px) {
-            font-size: 65px;
+        @media (max-width: 425px) {
+            font-size: 60px;
+            margin-top: 100px;
         }
     }
     p {
@@ -368,7 +375,7 @@ body {
         background-position: center;
         background-repeat: no-repeat;
         animation: jump 1.2s ease-in infinite;
-        @media (max-width: 320px) {
+        @media (max-width: 425px) {
             animation-name: jump_mobile;
         }
         @keyframes jump {
