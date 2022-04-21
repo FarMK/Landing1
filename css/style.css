@@ -730,7 +730,7 @@ body {
 
 .main .main_content .works .works_photo_floor .works_photo_elem {
     width: 33.3333%;
-    height: 220px;
+    height: 250px;
     background-color: gray;
     margin: 15px;
     position: relative;
@@ -741,7 +741,22 @@ body {
 
 @media (max-width: 1024px) {
     .main .main_content .works .works_photo_floor .works_photo_elem {
-        width: 100%;
+        width: 70%;
+        height: 400px;
+    }
+}
+
+@media(max-width:768px) {
+    .main .main_content .works .works_photo_floor .works_photo_elem {
+        width: 90%;
+        height: 320px;
+    }
+}
+
+@media(max-width:425px) {
+    .main .main_content .works .works_photo_floor .works_photo_elem {
+        width: 95%;
+        height: 220px;
     }
 }
 
